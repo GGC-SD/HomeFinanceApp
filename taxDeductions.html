@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Dropdown Button */
+
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    /*End menu*/
+  </style>
+</head>
+<title>Tax Deductions</title>
+
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+    </div>
+  </div>
+ 
+  <h1>
+    <center> Tax Deductions </center>
+  </h1>
+  <hr>
+
+  <h2>
+    <center> Enter the following information:</center>
+  </h2>
+  <center>
+    <form action="/action_page.php">
+      Please enter tax deductible item:
+      <br>
+      <input type="text" Item Name="itemName" value="I.E Tires">
+      <br>
+      <br>
+
+      <form action="/action_page.php">
+        Please enter classification of item:
+        <br>
+        <input type="text" Item Name="itemName" value="I.E Business Expense">
+        <br>
+        <br>
+
+        <form action="/action_page.php">
+          Please enter total cost of the item:
+          <br>
+          <input type="text" Item Name="itemName" value="400.95">
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        <button type="button" onclick="alert('Currently under production')">Home</button>
+  </center>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Income</title>
+    <style>
+        /* Dropdown Button */
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /*End menu*/
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="income.html">Income</a>
+            <a href="savings.html">Savings</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="taxDeductions.html">Tax Deductions</a>
+            <a href="taxChart.html">Tax Chart</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="security.html">Security</a>
+        </div>
+    </div>
+    <center>
+        <h1> Income
+            <br>
+        </h1>
+    </center>
+
+    <hr>
+    <br>
+
+    <!-- Income 1 -->
+    <center>
+        <div class="income1Title">
+            <label for="url">Income 1</label>
+            <class="income1Field">
+                <input name="Income 1" type="number" maxlength="8">
+            </class="income1Field">
+
+            <class="submitButton1">
+                <input name="submitButton1" type="submit">
+            </class="submitButton1">
+        </div>
+    </center>
+
+    <br>
+    <br>
+
+    <!-- Income 2 -->
+    <center>
+        <div class="income2Title">
+            <label for="url">Income 2</label>
+            <class="income1Field">
+                <input name="Income 2" type="number" maxlength="8">
+                <class="submitButton2">
+                    <input name="submitButton2" type="submit">
+                </class="submitButton2">
+
+        </div>
+    </center>
+
+    <br>
+    <br>
+
+    <!-- Add Additonal Income -->
+    <center>
+        <button type="button" onClick="addAdditionalIncome()">Add Additional Income</button>
+    </center>
+
+</body>
+
+<script>
+
+    function addAdditonalIncome() {
+
+    }
+
+</script>

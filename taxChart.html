@@ -1,0 +1,144 @@
+<html>
+
+<head>
+  <title>Tax Chart</title>
+  <style>
+    /* Dropdown Button */
+
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    /*End menu*/
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+    </div>
+  </div>
+
+  <center>
+    <h1>Tax Chart</h1>
+  </center>
+  <br>
+
+  <table>
+    <tr>
+      <th>Item Name</th>
+      <th>Type of Item</th>
+      <th>Cost</th>
+    </tr>
+    <tr>
+      <td>Tires</td>
+      <td>Uber Expense</td>
+      <td>400.95</td>
+    </tr>
+    <tr>
+      <td>Hair Products</td>
+      <td>Cosmotology Expense</td>
+      <td>359.56</td>
+    </tr>
+    <tr>
+      <td>Gas</td>
+      <td>18-Wheeler Company Truck</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Lawncare Products</td>
+      <td>Rental House Expense</td>
+      <td>199.99</td>
+    </tr>
+    <tr>
+      <td>House Taces</td>
+      <td>State Taxes</td>
+      <td>2000.59</td>
+    </tr>
+    <tr>
+      <td>Church Tithes</td>
+      <td>Church</td>
+      <td>50.00</td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+  <center>
+    <button type="button" onclick="alert('Currently under production')">Save W-2 Statement</button>
+    <button type="button" onclick="alert('Currently under production')">Save Picture of receipt</button>
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick="alert('Currently under production')">View Saved Images</button>
+    <button type="button" onclick="alert('Currently under production')">Home</button>
+
+  </center>
+
+
+</body>
+
+</html>
