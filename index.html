@@ -173,7 +173,33 @@
       <br>
     </h1>
     <hr>
-    <img src="pieChart.png" width=187 height=192>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Name', 'Weight'],
+          ['Expenses',     40],
+          ['Budget',      25],
+          ['Savings',  10],
+          ['Budget Flexibility', 7],
+          ['Savings Potential',    5]
+        ]);
+
+        var options = {
+          title: 'Daily Snapshot',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+  </body>
     <br>
     <br>
     <button class="button button1">Account 1 Current Balance</button>
