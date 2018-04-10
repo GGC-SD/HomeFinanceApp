@@ -80,7 +80,7 @@
 	<hr>
 
 	<center>
-		<select>
+	<!--   	<select>
 			<option value="Month Select">Month Select:</option>
 			<option value="January">January</option>
 			<option value="February">February</option>
@@ -106,8 +106,52 @@
 
 		<button type="submit" onClick="">Submit</button>
 
-		<br>
+		<br>  -->
 
-		<img src="savingsChart.png" width=500 height=500>
+		<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	</center>
 </body>
+
+
+
+
+ 
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light1", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Savings By Month"
+	},
+	axisY: {
+		title: "US dollars ($)"
+	},
+	data: [{        
+		type: "column",  
+		//showInLegend: true, 
+		//legendMarkerColor: "grey",
+		legendText: "Months",
+		dataPoints: [
+
+		// y to be pull from database using MongoDB      
+			{ y: 500, label: "January" },
+			{ y: 400,  label: "February" },
+			{ y: 800,  label: "March" },
+			{ y: 200,  label: "April" },
+			{ y: 300,  label: "June" },
+			{ y: 100, label: "July" },
+			{ y: 900,  label: "August" },
+			{ y: 700,  label: "September" },
+			{ y: 300,  label: "October" },
+			{ y: 600,  label: "November" },
+			{ y: 200,  label: "December" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
