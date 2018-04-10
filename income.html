@@ -48,6 +48,24 @@
         }
 
         /*End menu*/
+
+    .block {
+        display: block;
+        width: 20%;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .block:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
     </style>
 </head>
 
@@ -79,12 +97,13 @@
     <form action="/action_page.php">
     	Income 1: <input type="number" name="income1"><br>
     	Income 2: <input type="number" name="income2"><br><br>
-    	<input type="submit" value="Submit">
+        <button class="block" onclick="">Submit</button>
     </form>
 
+    <br>
 
     <!-- Add Additonal Income -->
-    <button type="button" onClick="addAdditionalIncome()">Add Additional Income</button>
+    <button class="block" onClick="addAdditionalIncome()">Add Additional Income</button>
 
 </center>
 </body>
