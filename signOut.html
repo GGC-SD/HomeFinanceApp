@@ -51,15 +51,24 @@
 
             /*End menu*/
 
-            button {
+            .block {
+                display: block;
+                width: 20%;
+                border: none;
                 background-color: #4CAF50;
                 color: white;
-                padding: 14px 20px;
-                margin: 12px 0;
-                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
                 cursor: pointer;
-                width: 100%;
+                text-align: center;
             }
+
+            .block:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+           
         </style>
     </head>
 
@@ -75,9 +84,9 @@
             <h1> Are you sure you want to sign out?
                 <br>
                 <hr>
-                <a href="login.html"><button>Yes</button></a>
-
-                <a href="index.html"><button>Cancel</button></a>
+                <br>
+                <button class="block" a href="login.html">Yes</button>
+                <button class="block" a href="index.html">Cancel</button>
 
             </h1>
         </center>
