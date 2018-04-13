@@ -1,76 +1,73 @@
 <html>
+
 <body bgcolor="#E6E6FH">
-<head>
-  <title>Tax Chart | Home Finance App</title>
-  <style>
-    /* Dropdown Button */
 
-    .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-    }
+  <head>
+    <title>Tax Chart | Home Finance App</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
 
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
 
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f1f1f1;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
+      .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
 
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
 
-    .dropdown-content a:hover {
-      background-color: #ddd
-    }
+      .main {
+        margin-left: 200px;
+        /* Same as the width of the sidenav */
+      }
 
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
 
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-    /*End menu*/
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
 
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
 
-    td,
-    th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
+  <body>
+    <div class="sidenav">
       <a href="index.html">Home</a>
       <a href="income.html">Income</a>
       <a href="savings.html">Savings</a>
@@ -79,68 +76,67 @@
       <a href="taxChart.html">Tax Chart</a>
       <a href="notifications.html">Notifications</a>
       <a href="security.html">Security</a>
-      <a href="about_us.html">About Us</a>
       <a href="signOut.html">Sign Out</a>
     </div>
-  </div>
 
-  <center>
-    <h1>Tax Chart</h1>
-  </center>
-  <br>
+    <div class="main">
+      <center>
+        <h1>Tax Chart</h1>
+      </center>
+      <br>
 
-  <table>
-    <tr>
-      <th>Item Name</th>
-      <th>Type of Item</th>
-      <th>Cost</th>
-    </tr>
-    <tr>
-      <td>Tires</td>
-      <td>Uber Expense</td>
-      <td>400.95</td>
-    </tr>
-    <tr>
-      <td>Hair Products</td>
-      <td>Cosmotology Expense</td>
-      <td>359.56</td>
-    </tr>
-    <tr>
-      <td>Gas</td>
-      <td>18-Wheeler Company Truck</td>
-      <td>150.00</td>
-    </tr>
-    <tr>
-      <td>Lawncare Products</td>
-      <td>Rental House Expense</td>
-      <td>199.99</td>
-    </tr>
-    <tr>
-      <td>House Taces</td>
-      <td>State Taxes</td>
-      <td>2000.59</td>
-    </tr>
-    <tr>
-      <td>Church Tithes</td>
-      <td>Church</td>
-      <td>50.00</td>
-    </tr>
-  </table>
+      <table>
+        <tr>
+          <th>Item Name</th>
+          <th>Type of Item</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Tires</td>
+          <td>Uber Expense</td>
+          <td>400.95</td>
+        </tr>
+        <tr>
+          <td>Hair Products</td>
+          <td>Cosmotology Expense</td>
+          <td>359.56</td>
+        </tr>
+        <tr>
+          <td>Gas</td>
+          <td>18-Wheeler Company Truck</td>
+          <td>150.00</td>
+        </tr>
+        <tr>
+          <td>Lawncare Products</td>
+          <td>Rental House Expense</td>
+          <td>199.99</td>
+        </tr>
+        <tr>
+          <td>House Taces</td>
+          <td>State Taxes</td>
+          <td>2000.59</td>
+        </tr>
+        <tr>
+          <td>Church Tithes</td>
+          <td>Church</td>
+          <td>50.00</td>
+        </tr>
+      </table>
 
-  <br>
-  <br>
-  <center>
-    <button type="button" onclick="alert('Currently under production')">Save W-2 Statement</button>
-    <button type="button" onclick="alert('Currently under production')">Save Picture of receipt</button>
-    <br>
-    <br>
-    <br>
-    <button type="button" onclick="alert('Currently under production')">View Saved Images</button>
-    <button type="button" onclick="alert('Currently under production')">Home</button>
+      <br>
+      <br>
+      <center>
+        <button type="button" onclick="alert('Currently under production')">Save W-2 Statement</button>
+        <button type="button" onclick="alert('Currently under production')">Save Picture of receipt</button>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="alert('Currently under production')">View Saved Images</button>
+        <button type="button" onclick="alert('Currently under production')">Home</button>
 
-  </center>
+      </center>
 
-
-</body>
+    </div>
+  </body>
 
 </html>
