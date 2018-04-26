@@ -1,3 +1,30 @@
-[{"_id":{"$oid":"5ade78c4825df6c62f9ddb17"},"first_name":"John","last_name":"Doe","gender":"male","user_name":"j_doe","pwd":"1234"},
-    {"_id":{"$oid":"5ade79cd825df6c62f9ddb18"},"first_name":"Steve","last_name":"Smith","gender":"male","user_name":"s_smith","pwd":"3456"},
-    {"_id":{"$oid":"5ade79cd825df6c62f9ddb19"},"first_name":"Sally","last_name":"Sue","gender":"female","user_name":"s_sue","pwd":"2345"}]
+{
+	"_id": {
+		"$oid": "5ade78c4825df6c62f9ddb17"
+	},
+	"first_name": "John",
+	"last_name": "Doe",
+	"gender": "male",
+	"user_name": "j_doe",
+	"pwd": "1234"
+}
+{
+	"_id": {
+		"$oid": "5ade79cd825df6c62f9ddb18"
+	},
+	"first_name": "Steve",
+	"last_name": "Smith",
+	"gender": "male",
+	"user_name": "s_smith",
+	"pwd": "3456"
+}
+{
+	"_id": {
+		"$oid": "5ade79cd825df6c62f9ddb19"
+	},
+	"first_name": "Sally",
+	"last_name": "Sue",
+	"gender": "female",
+	"user_name": "s_sue",
+	"pwd": "2345"
+}
