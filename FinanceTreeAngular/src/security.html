@@ -1,0 +1,275 @@
+<html>
+
+<body bgcolor="#E6E6FH">
+
+  <head>
+    <title>Security | Home Finance App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 6px 6px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      margin-left: 200px;
+      /* Same as the width of the sidenav */
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    /* Slider Button */
+
+    .block {
+      display: block;
+      width: 25%;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .block:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      display: none;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: #7CFC00;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    .slider.round {
+      border-radius: 24px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /* End of Button Slider */
+
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* The actual popup */
+
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup Pin */
+
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+      <a href="about_us.html">About Us</a>
+      <a href="signOut.html">Sign Out</a>
+    </div>
+
+    <center>
+      <h1> Security
+        <br>
+      </h1>
+    </center>
+    <hr>
+
+    <center>
+      <div>
+        <center>
+          <h2>Administrators</h2>
+        </center>
+      </div>
+
+      <br>
+      <p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        John Goodman
+      </p>
+      </br>
+
+      <br>
+      <p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        Mary Susan B. Anthony
+      </p>
+      </br>
+
+      <br>
+      <p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        Child Children the Child
+      </p>
+      </br>
+
+      <script>
+        function myFunction() {
+          var txt;
+          var person = prompt("Please enter a pin:", "EG 1234");
+          if (person == null || person == "") {
+            txt = "User cancelled the prompt.";
+          } else {
+            txt = "Hello " + person + "! How are you today?";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+      </script>
+
+      <div class="block" onclick="myFunction()">Set Up Pin
+
+      </div>
+    </center>
+  </body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<body bgcolor="#E6E6FH">
+
+	<head>
+		<title>Savings | Home Finance App</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body {
+				font-family: "Lato", sans-serif;
+			}
+
+			.sidenav {
+				height: 100%;
+				width: 200px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				padding-top: 20px;
+			}
+
+			.sidenav a {
+				padding: 6px 6px 6px 32px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #818181;
+				display: block;
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.main {
+				margin-left: 200px;
+				/* Same as the width of the sidenav */
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {
+					padding-top: 15px;
+				}
+				.sidenav a {
+					font-size: 18px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="sidenav">
+			<a href="home.html">Home</a>
+			<a href="income.html">Income</a>
+			<a href="savings.html">Savings</a>
+			<a href="expenses.html">Expenses</a>
+			<a href="taxDeductions.html">Tax Deductions</a>
+			<a href="taxChart.html">Tax Chart</a>
+			<a href="notifications.html">Notifications</a>
+			<a href="security.html">Security</a>
+			<a href="about_us.html">About Us</a>
+			<a href="signOut.html">Sign Out</a>
+		</div>
+
+		<div class "main">
+			<center>
+				<h1> Savings
+					<br>
+				</h1>
+			</center>
+			<hr>
+
+			<center>
+				<!--   	<select>
+			<option value="Month Select">Month Select:</option>
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+		</select>
+
+		<select>
+			<option value="Year Select">Year Select:</option>
+			<option value="2018">2018</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+			<option value="2015">2015</option>
+		</select>
+
+		<button type="submit" onClick="">Submit</button>
+
+		<br>  -->
+
+				<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+			</center>
+		</div>
+	</body>
+
+
+
+
+
+	<script>
+		window.onload = function () {
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				animationEnabled: true,
+				theme: "light1", // "light1", "light2", "dark1", "dark2"
+				title: {
+					text: ""
+				},
+				axisY: {
+					title: "US dollars ($)"
+				},
+				data: [{
+					type: "column",
+					//showInLegend: true, 
+					//legendMarkerColor: "grey",
+					legendText: "Months",
+					dataPoints: [
+
+						// y to be pull from database using MongoDB      
+						{ y: 500, label: "January" },
+						{ y: 400, label: "February" },
+						{ y: 800, label: "March" },
+						{ y: 200, label: "April" },
+						{ y: 300, label: "June" },
+						{ y: 100, label: "July" },
+						{ y: 900, label: "August" },
+						{ y: 700, label: "September" },
+						{ y: 300, label: "October" },
+						{ y: 600, label: "November" },
+						{ y: 200, label: "December" },
+					]
+				}]
+			});
+			chart.render();
+
+		}
+	</script>

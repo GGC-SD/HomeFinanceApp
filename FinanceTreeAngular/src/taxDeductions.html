@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<body bgcolor="#E6E6FH">
+  <html>
+
+
+  <head>
+    <title>Tax Deductions | Home Finance App</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 200px;
+        /* Same as the width of the sidenav */
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <title>Tax Deductions</title>
+
+  <body>
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+      <a href="about_us.html">About Us</a>
+      <a href="signOut.html">Sign Out</a>
+    </div>
+
+    <div class="main">
+      <h1>
+        <center> Tax Deductions </center>
+      </h1>
+      <hr>
+
+      <h2>
+        <center> Enter the following information:</center>
+      </h2>
+      <center>
+        <form action="/action_page.php">
+          Please enter tax deductible item:
+          <br>
+          <input type="text" Item Name="itemName" value="I.E Tires">
+          <br>
+          <br>
+
+          <form action="/action_page.php">
+            Please enter classification of item:
+            <br>
+            <input type="text" Item Name="itemName" value="I.E Business Expense">
+            <br>
+            <br>
+
+            <form action="/action_page.php">
+              Please enter total cost of the item:
+              <br>
+              <input type="text" Item Name="itemName" value="400.95">
+              <br>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+            <button type="button" onclick="alert('Currently under production')">Home</button>
+      </center>
+    </div>
+  </body>
+
+  </html>
