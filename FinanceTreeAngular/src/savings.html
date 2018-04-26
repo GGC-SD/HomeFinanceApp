@@ -13,31 +13,36 @@
 
 			.sidenav {
 				height: 100%;
-				width: 200px;
+				width: 0;
 				position: fixed;
 				z-index: 1;
 				top: 0;
 				left: 0;
 				background-color: #111;
 				overflow-x: hidden;
-				padding-top: 20px;
+				transition: 0.5s;
+				padding-top: 60px;
 			}
 
 			.sidenav a {
-				padding: 6px 6px 6px 32px;
+				padding: 8px 8px 8px 32px;
 				text-decoration: none;
-				font-size: 20px;
+				font-size: 25px;
 				color: #818181;
 				display: block;
+				transition: 0.3s;
 			}
 
 			.sidenav a:hover {
 				color: #f1f1f1;
 			}
 
-			.main {
-				margin-left: 200px;
-				/* Same as the width of the sidenav */
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
 			}
 
 			@media screen and (max-height: 450px) {
@@ -52,7 +57,8 @@
 	</head>
 
 	<body>
-		<div class="sidenav">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="home.html">Home</a>
 			<a href="income.html">Income</a>
 			<a href="savings.html">Savings</a>
@@ -64,6 +70,18 @@
 			<a href="about_us.html">About Us</a>
 			<a href="signOut.html">Sign Out</a>
 		</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
 
 		<div class "main">
 			<center>
