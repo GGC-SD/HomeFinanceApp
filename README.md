@@ -18,25 +18,24 @@ Finance Tree is a family-friendly budgeting application that allows parents to a
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Open Terminal
 ```
-code blocks for commands
+cd HomeFinanceApp/FinanceTreeAngular/src
+```
+```
+npm start
 ```
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Please Contact [Lindsey Wade](lwade@ggc.edu) for any issues concerning using the Finance Tree Budgeting Applcation.
 
 ## Authors
 
-Paul Cardenas (pcardenas@ggc.edu)
-Jeremiah Anderson (janders8@ggc.edu)
-Jared Houseman (jhouseman@ggc.edu)
-Lindsey Wade (lwade@ggc.edu)
+* [Paul Cardenas](pcardenas@ggc.edu)
+* [Jeremiah Anderson](janders8@ggc.edu)
+* [Jared Houseman](jhouseman@ggc.edu)
+* [Lindsey Wade](lwade@ggc.edu)
 
 ## Version History
 
