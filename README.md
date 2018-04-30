@@ -28,7 +28,7 @@ npm start
 
 ## Help
 
-Please Contact [Lindsey Wade](https://github.com/darthLu) for any issues concerning using the Finance Tree Budgeting Applcation.
+Please Contact [Lindsey Wade](https://github.com/darthLu) for any issues concerning using the Finance Tree Budgeting Application.
 
 ## Authors
 
