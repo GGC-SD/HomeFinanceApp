@@ -28,14 +28,14 @@ npm start
 
 ## Help
 
-Please Contact [Lindsey Wade](lwade@ggc.edu) for any issues concerning using the Finance Tree Budgeting Applcation.
+Please Contact [Lindsey Wade](https://github.com/darthLu) for any issues concerning using the Finance Tree Budgeting Applcation.
 
 ## Authors
 
-* [Paul Cardenas](pcardenas@ggc.edu)
-* [Jeremiah Anderson](janders8@ggc.edu)
-* [Jared Houseman](jhouseman@ggc.edu)
-* [Lindsey Wade](lwade@ggc.edu)
+* [Paul Cardenas](https://github.com/pcardenas-ITEC3860)
+* [Jeremiah Anderson](https://github.com/JBAnderson92)
+* [Jared Houseman](https://github.com/jhouseman)
+* [Lindsey Wade](https://github.com/darthLu)
 
 ## Version History
 
