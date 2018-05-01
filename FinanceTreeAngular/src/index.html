@@ -206,40 +206,46 @@
       <body>
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
         <div id="id01" class="modal">
-          <form class="modal-content animate" action="/action_page.php">
+          <form class="modal-content animate">
+            <form class="login()">
             <div class="imgcontainer">
               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
               <img src="avatar.png" alt="Avatar" class="avatar">
             </div>
+            <form class="login()">
             <div class="container">
               <label for="uname">
                 <b>Username</b>
               </label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-              <label for="psw">
+              <input type="text" name="user_name" 
+                placeholder="Enter Username" [(ngModel)]= "credentials.user_name" required>
+              <label for="pwd">
                 <b>Password</b>
               </label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="text" placeholder="Enter Password" name="pwd" 
+                [(ngModel)]= "credentials.pwd" required>
+            
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
               <!-- <button type="submit">Login</button> -->
               <div>
-                <a href="home.html">
                   <button class="block" onclick="window.location='home.html'">Submit</button>
                 </a>
                 <!-- <div id="button">
                 <a href="index.html">Login</a> -->
               </div>
             </div>
+           </form>
             <div class="container" style="background-color:#f1f1f1">
               <center>
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
               </center>
-              <span class="psw">Forgot
+              <span class="pwd">Forgot
                 <a href="#">password?</a>
               </span>
             </div>
+
           </form>
         </div>
         <script>
