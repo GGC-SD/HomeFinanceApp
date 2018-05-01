@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<link href="styles.css" rel="stylesheet">
+<!--<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+<!-- <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loading AppComponent content here ...</my-app>
+  </body>
+</html> -->
+
+/*Nav*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*Account buttons*/
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {
+  background-color: #e7e7e7;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="income.html">Income</a></li>
+    <li><a href="savings.html">Savings</a></li>
+    <li><a href="expenses.html">Expenses</a></li>
+    <li><a href="taxDeductions.html">Tax Deductions</a></li>       
+    <li><a href="taxChart.html">Tax Chart</a></li>
+    <li><a href="notifications.html">Notifications</a></li>
+    <li><a href="security.html">Security</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+    <li><a href="signOut.html">Sign Out</a></li>
+  </ul>
+
+  <!-- <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+      <a href="signOut.html">Sign Out</a>
+    </div>
+  </div> -->
+
+  <!-- <nav>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="income.html">Income</a>
+    </li>
+    <li>
+      <a href="savings.html">Savings</a>
+    </li>
+    <li>
+      <a href="taxDeductions.html">Tax Deductions</a>
+    </li>
+    <li>
+      <a href="taxChart.html">Tax Chart</a>
+    </li>
+    <li>
+      <a href="notifications.html">Notifications</a>
+    </li>
+    <li>
+      <a href="security.html">Security</a>
+    </li>
+  </ul>
+</nav> -->
+  <!-- end of nav -->
+  <div class="main">
+
+    <center>
+      <h1> Overview
+        <br>
+      </h1>
+      <hr>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .btn {
+          border: none;
+          color: white;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .success {
+          background-color: #4CAF50;
+        }
+
+        /* Green */
+
+        .success:hover {
+          background-color: #46a049;
+        }
+
+        .info {
+          background-color: #2196F3;
+        }
+
+        /* Blue */
+
+        .info:hover {
+          background: #0b7dda;
+        }
+
+        .warning {
+          background-color: #ff9800;
+        }
+
+        /* Orange */
+
+        .warning:hover {
+          background: #e68a00;
+        }
+
+        .danger {
+          background-color: #f44336;
+        }
+
+        /* Red */
+
+        .danger:hover {
+          background: #da190b;
+        }
+
+        .default {
+          background-color: #e7e7e7;
+          color: black;
+        }
+
+        /* Gray */
+
+        .default:hover {
+          background: #ddd;
+        }
+      </style>
+      </head>
+
+      <body>
+
+        <button class="btn success">Bills Current</button>
+        <button class="btn info">Cable Bill due in 12 days</button>
+        <button class="btn warning">Water bill 3 days</button>
+        <button class="btn danger">Power bill past due</button>
+
+      </body>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Name', 'Weight'],
+            ['Expenses', 40],
+            ['Budget', 25],
+            ['Savings', 10],
+            ['Budget Flexibility', 7],
+            ['Savings Potential', 5]
+          ]);
+
+          var options = {
+            title: 'Daily Snapshot',
+            is3D: true,
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+          chart.draw(data, options);
+        }
+      </script>
+      </head>
+
+      <body>
+        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+      </body>
+      <br>
+      <br>
+      <button class="button button1">Account 1 Current Balance</button>
+      <br>
+      <button class="button button2">Account 2 Current Balance</button>
+      <br>
+      <button class="button button3">Account 3 Current Balance</button>
+      <br>
+      <button class="button button4">Account 4 Current Balance</button>
+      <br>
+      <button class="button button5">Account 5 Current Balance</button>
+      <br>
+
+</body>
+
+</html>

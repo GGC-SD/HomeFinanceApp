@@ -1,0 +1,159 @@
+<html>
+
+<body bgcolor="#E6E6FH">
+
+  <head>
+    <title>Tax Chart | Home Finance App</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 200px;
+        /* Same as the width of the sidenav */
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="income.html">Income</a>
+      <a href="savings.html">Savings</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="taxDeductions.html">Tax Deductions</a>
+      <a href="taxChart.html">Tax Chart</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="security.html">Security</a>
+      <a href="about_us.html">About Us</a>
+      <a href="signOut.html">Sign Out</a>
+    </div>
+
+    <div class="main">
+      <center>
+        <h1>Tax Chart</h1>
+      </center>
+      <br>
+
+      <table>
+        <tr>
+          <th>Item Name</th>
+          <th>Type of Item</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Tires</td>
+          <td>Uber Expense</td>
+          <td>400.95</td>
+        </tr>
+        <tr>
+          <td>Hair Products</td>
+          <td>Cosmotology Expense</td>
+          <td>359.56</td>
+        </tr>
+        <tr>
+          <td>Gas</td>
+          <td>18-Wheeler Company Truck</td>
+          <td>150.00</td>
+        </tr>
+        <tr>
+          <td>Lawncare Products</td>
+          <td>Rental House Expense</td>
+          <td>199.99</td>
+        </tr>
+        <tr>
+          <td>House Taxes</td>
+          <td>State Taxes</td>
+          <td>2000.59</td>
+        </tr>
+        <tr>
+          <td>Church Tithes</td>
+          <td>Church</td>
+          <td>50.00</td>
+        </tr>
+      </table>
+
+      <br>
+      <br>
+
+
+
+      <center>
+        <input type="file" id="fileElem" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+        <button type = "button" onclick="myFunction()" id = "fileSelect">Save W-2 or Receipts</button>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="alert('Currently under production')">View Saved Images</button>
+
+        <script>
+function myFunction() {
+  //document.getElementById('fileid').click()
+  var fileSelect = document.getElementById("fileSelect"),
+  fileElem = document.getElementById("fileSelect");
+
+fileSelect.addEventListener("click", function (x) {
+  if (fileElem) {
+    fileElem.click();
+  }
+}, false);
+}
+</script>
+
+      </center>
+
+    </div>
+  </body>
+
+</html>
