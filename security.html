@@ -7,46 +7,59 @@
 <style>
   /* Dropdown Button */
 
-  .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
+.sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+      .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+      .main {
+        margin-left: 200px;
+        /* Same as the width of the sidenav */
+      }
 
-  .dropdown-content a:hover {
-    background-color: #ddd
-  }
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
 
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
 
   /*End menu*/
 
@@ -186,9 +199,7 @@
 </head>
 
 <body>
-  <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
+  <div class="sidenav">
       <a href="index.html">Home</a>
       <a href="income.html">Income</a>
       <a href="savings.html">Savings</a>
